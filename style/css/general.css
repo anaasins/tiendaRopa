@@ -1,0 +1,94 @@
+/*ESTILO DE LA NAVEGACION*/
+#logo{
+width: 110px;
+height: auto;
+margin: 0;
+float: left;
+}
+
+nav{
+  margin-top: 55px;
+}
+.snip1168 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  margin-right: 110px;
+}
+.snip1168 * {
+  box-sizing: border-box;
+}
+.snip1168 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  padding: 0;
+}
+.snip1168 a {
+  padding: 0.5em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.snip1168 a:before,
+.snip1168 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1168 a:before {
+  top: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #c0392b;
+}
+.snip1168 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.snip1168 a:hover:before,
+.snip1168 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.snip1168 a:hover:after,
+.snip1168 .current a:after {
+  max-width: 100%;
+}
+/*SE ACABO EL ESTILO DE LA NAVEGACIÓN*/
+
+/*ESTILO DEL BODY*/
+body {
+  background-color: #212121;
+  padding: 20px 0;
+}
+/*SE ACABO EL ESTILO DEL BODY*/
+
+/*ESTILO DEL FOOTER*/
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+
+	#main-footer a {
+		color: white;
+	}
+/*SE ACABO EL ESTILO DEL FOOTER*/
