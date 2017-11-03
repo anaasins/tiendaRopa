@@ -5,26 +5,26 @@
     <title>Página de inicio</title>
     <link rel="stylesheet" href="style/css/general.css">
     <link rel="shortcut icon" href="img/favicon.ico">
-
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/contacto.js"></script>
   </head>
-  <body>
+  <body onload="imprimeMapa();">
     <img src="img/logo.png" alt="" id="logo">
 
     <header>
       <nav>
         <ul class="snip1168">
-          <li class="current"><a href="inicio.html">Inicio</a></li>
+          <li><a href="inicio.html">Inicio</a></li>
           <li><a href="hombre.html">Hombre</a></li>
           <li><a href="mujer.html">Mujer</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li class="current"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
+    <p id="coordenadas"></p>
+    <div id="contenedor">
 
-
-    <section>
-      <!--Aqui ponemos las novedades odiapositiva de imagenes-->
-    </section>
+    </div>
 
     <footer id="main-footer">
 		<p>&copy; 2017 <a href="#">latiendadeJS.com</a></p>

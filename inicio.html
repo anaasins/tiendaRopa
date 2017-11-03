@@ -5,11 +5,11 @@
     <title>Página de inicio</title>
     <link rel="stylesheet" href="style/css/general.css">
     <link rel="shortcut icon" href="img/favicon.ico">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <img src="img/logo.png" alt="" id="logo">
-
     <header>
       <nav>
         <ul class="snip1168">
@@ -23,7 +23,32 @@
 
 
     <section>
-      <!--Aqui ponemos las novedades odiapositiva de imagenes-->
+      <div class="w3-content w3-section" style="max-width:500px">
+
+  <img class="mySlides w3-animate-fading" src="img/slider/1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/slider/2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/slider/3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/slider/4.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/slider/5.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/slider/6.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 8000);
+}
+</script>
     </section>
 
     <footer id="main-footer">
