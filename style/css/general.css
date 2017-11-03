@@ -68,12 +68,17 @@ nav{
   max-width: 100%;
 }
 /*SE ACABO EL ESTILO DE LA NAVEGACIÓN*/
-
 /*ESTILO DEL BODY*/
+h2{
+  font-size: 100px !important;
+  text-align: center;
+}
 body {
   background-color: #212121;
   padding: 20px 0;
 }
+
+
 /*SE ACABO EL ESTILO DEL BODY*/
 
 /*ESTILO DEL FOOTER*/
