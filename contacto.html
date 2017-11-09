@@ -22,11 +22,12 @@
       </nav>
     </header>
     <div id="contenedor"></div>
-    <form action="index.html" method="post">
+    <form onsubmit="return validarTexto();">
       <fieldset>
         <legend>Formulario de contacto</legend>
-        <input type="text" name="" value="" placeholder="Nombre"> <br><br>
-        <input type="text" name="" value="" placeholder="Telefono"> <br><br>
+
+        <input type="text" name="" value="" placeholder="Nombre" id="resultadonom"> <br><br>
+        <input type="text" name="" value=""  placeholder="Telefono" id="resultadotlf">
         <input type="text" name="" value="" placeholder="Correo"><br><br>
         <input type="text" name="" value="" placeholder="Asunto"><br><br>
         <textarea name="name" rows="8" cols="50" placeholder="Escriba aqui su mensaje"></textarea><br>
