@@ -25,6 +25,14 @@ function validarTexto(){
         return true;
       }
         }
+    //Cuenta cuantas letras estan escritas en el texarea y si son mas de 250 no puede escribir mas
+  function numeroLetras(){
+    var string = document.getElementById("texto").value;
+    var contador = string.length;
+    if (contador > 250) {
+      return false;
+    }
+  }
 
 function imprimeMapa() {
   //creamos el div donde ira el mapa y le damos el css deseado.
