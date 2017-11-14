@@ -27,9 +27,9 @@ function validarTexto(){
         }
     //Cuenta cuantas letras estan escritas en el texarea y si son mas de 250 no puede escribir mas
   function numeroLetras(){
-    var string = document.getElementById("texto").value;
-    var contador = string.length;
-    if (contador > 250) {
+    var cadena = document.getElementById("texto").value;
+    var contador = cadena.length;
+    if (contador > 10) {
       return false;
     }
   }
