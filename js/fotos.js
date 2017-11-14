@@ -30,7 +30,7 @@ function fotosGrandes(elemento) {
   //damos id y estilo al contenedor
   precio.id='precio';
   precio.style.color='white';
-  div.style.textAlign='center';
+  precio.style.marginLeft='150px';
   precio.style.fontSize='40px';
 }
 function fotosPequenas(elemento) {
@@ -42,4 +42,15 @@ function fotosPequenas(elemento) {
   //borramos le h3 del precio que habiamos creado.
   var borrar= document.getElementById('precio');
   borrar.parentNode.removeChild(borrar);
+}
+
+function carrito(elemento) {
+  var foto= document.getElementById(elemento.id);
+  var prods = localStorage.getItem("productos");
+  var prods2 = prods.split(",");
+
+  prods2.push(foto.id);
+
+  localStorage.setItem("productos", prods2);
+  
 }
