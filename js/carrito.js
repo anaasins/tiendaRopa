@@ -1,12 +1,15 @@
 function carrito(elemento) {
-  var foto= document.getElementById(elemento.id);
-  var prods = localStorage.getItem("productos");
-  var prods2 = prods.split(",");
+  if (!localStorage.productos) {
+    localStorage.productos=elemento.id;
+  }else {
+    var foto= document.getElementById(elemento.id);
+    var prods = localStorage.getItem("productos");
+    var prods2 = prods.split(",");
 
-  prods2.push(foto.id);
+    prods2.push(foto.id);
 
-  localStorage.setItem("productos", prods2);
-
+    localStorage.setItem("productos", prods2);
+  }
 }
 
 function llamarfuncion() {
