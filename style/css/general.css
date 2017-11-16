@@ -6,6 +6,13 @@ margin: 0;
 float: left;
 }
 
+input[type='button']{
+  height: 40px;
+  width: 100px;
+  background-color: darkgrey;
+  color: black;
+}
+
 nav{
   margin-top: 55px;
 }

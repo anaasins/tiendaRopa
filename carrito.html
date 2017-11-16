@@ -9,7 +9,7 @@
     <script type="text/javascript" src="js/carrito.js">
     </script>
   </head>
-  <body onload="llamarfuncion();">
+  <body onload="llamarfuncion(); cuentaAtras()">
     <!--NUESTRO LOGO-->
     <img src="img/logo.png" alt="" id="logo">
     <!--NUESTRO LOGO-->
@@ -32,9 +32,18 @@
 
       </div>
       <br><br><br><br>
+      <div>
+        <form name="form" id="contador">
+          Tiempo restante...:
+          <input type="text" size="2" class="form_input" name="hour" disabled>:
+          <input type="text" size="2" class="form_input" name="minute" disabled>:
+          <input type="text" size="2" class="form_input" name="second" disabled>
+        </form>
+      </div>
       <div id="imagenes">
 
       </div>
+      <input type="button" value="Borrar" onclick="borrar();"></button>
     </section>
     <!--NUESTRO FOOTER-->
     <footer id="main-footer">

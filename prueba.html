@@ -2,12 +2,10 @@
 
 <head>
 <script language="javascript">
-<!--
-//Codigo que muestra una cuenta atras hasta finalizar el tiempo indicado
 //variables que determinan el tital de horas, minutos y segundos para la cuenta atras
 toHour=0;
-toMinute=0;
-toSecond=10;
+toMinute=30;
+toSecond=0;
 
 //cuenta atras
 function countDown()
@@ -39,11 +37,10 @@ function countDown()
 	}
   //If para cundo se termine el tiempo
   if (toSecond==0 && toMinute==0 && toHour==0) {
-    alert("Se a acabado el tiempo");
+    localStorage.clean
   }
 
 }
--->
 </script>
 
 <style type="text/css">
@@ -55,6 +52,7 @@ function countDown()
 	border-width: 0;
 	background-color: #212121;
 	text-align: right;
+	height: 25	;
 }
 </style>
 </head>
@@ -62,9 +60,9 @@ function countDown()
 <body onload="countDown();">
 <form name="form">
 	Tiempo restante...:
-	<input type="text" size="5" class="form_input" name="hour" disabled>:
-	<input type="text" size="5" class="form_input" name="minute" disabled>:
-	<input type="text" size="5" class="form_input" name="second" disabled>
+	<input type="text" size="2" class="form_input" name="hour" disabled>:
+	<input type="text" size="2" class="form_input" name="minute" disabled>:
+	<input type="text" size="2" class="form_input" name="second" disabled>
 </form>
 
 </body>
