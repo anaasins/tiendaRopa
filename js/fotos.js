@@ -43,14 +43,3 @@ function fotosPequenas(elemento) {
   var borrar= document.getElementById('precio');
   borrar.parentNode.removeChild(borrar);
 }
-
-function carrito(elemento) {
-  var foto= document.getElementById(elemento.id);
-  var prods = localStorage.getItem("productos");
-  var prods2 = prods.split(",");
-
-  prods2.push(foto.id);
-
-  localStorage.setItem("productos", prods2);
-  
-}
